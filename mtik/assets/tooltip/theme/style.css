@@ -1,0 +1,104 @@
+/*-----------------------------------------------------------------------------------------------*/
+/*                   A BETTER TOOLTIP - POWERED BY JQUERY AWESOMENESS                            */
+/*                   AUTHOR: jon cazier                                                          */
+/*                   EMAIL: jon at 3nhanced dot com                                              */
+/*-----------------------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                  CSS RESET THANKS TO ERIC MEYER                               */
+/*                   http://meyerweb.com/eric/thoughts/2007/05/01/reset-reloaded/                */
+/*-----------------------------------------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {outline: 0;}
+body {line-height: 1;color: black;background: white;}
+ol, ul {list-style: none;}
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: separate;border-spacing: 0;}
+caption, th, td {text-align: left;font-weight: normal;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '"';}
+blockquote, q {quotes: '"' '"';}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL STYLES                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.6em;
+	color: #999;}
+	
+p {margin: 15px 0; font-family: Arial, Helvetica, sans-serif;}
+
+h1 {font-size: 1.4em;}
+h2 {font-weight: bold;}
+
+a {color: #8CA3AF; font-weight: bold; text-decoration:none;}
+a:hover {color: #999;}
+
+strong {font-weight: bold;}
+
+textarea {white-space: nowrap;}
+
+/*-----------------------------------------------------------------------------------------------*/
+/*                                          GENERAL LAYOUT                                       */
+/*-----------------------------------------------------------------------------------------------*/
+
+body {background: #FFF url(images/bg.png) repeat-x top;}
+
+#wrapper {width: 960px; margin: auto; padding: 50px 0;}
+
+	#content {
+		width: 270px;
+		padding: 15px 25px; 
+		float: left; 
+		background: transparent url(images/leftColumn.gif) no-repeat; 
+		min-height: 575px;
+		height: auto !important;
+		height: 575px;}
+		
+	#main {width: 640px; height: 500px; margin-top: 7px; position: relative; float: left; background: transparent url(images/clouds.gif) no-repeat;}
+	
+	.tTip {width: 200px; position: absolute; cursor: pointer; color: #666; font-weight: bold;}
+	.tip {color: #333;}
+	
+		#cloud1 {top: 93px; left: 230px;}
+		#cloud2 {top: 168px; left: 440px;}
+		#cloud3 {top: 228px; left: 100px;}
+		#cloud4 {top: 350px; left: 370px;}
+		#cloud5 {top: 370px; left: 60px;}
+				
+/*-----------------------------------------------------------------------------------------------*/
+/*                                         TOOLTIP STYLES                                        */
+/*-----------------------------------------------------------------------------------------------*/
+
+.tip {
+	width: 212px;
+	padding-top: 37px;
+	overflow: hidden;
+	display: none;
+	position: absolute;
+	z-index: 500;
+	background: transparent url(images/tipTop.png) no-repeat top;}
+	
+.tipMid {background: transparent url(images/tipMid.png) repeat-y; padding: 0 25px 20px 25px;}
+.tipBtm {background: transparent url(images/tipBtm.png) no-repeat bottom; height: 32px;}
