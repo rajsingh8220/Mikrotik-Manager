@@ -68,7 +68,7 @@
         <center>
         <div id="head"></div>
         <div style="height: 90px; text-align: left; width: 500px; background:;">
-            <img style="float: left; margin-top: 15px;" width="150" height="60" src="<?php echo base_url(); ?>images/l1.png" />
+           
             <h1 style="float: left; margin-left: 25px; margin-top: 40px;">Bandwidth Manager</h1>
         </div>
 		<div id="formContainer">
@@ -98,8 +98,7 @@
 		</div>
         </center>
         <div style="border-top: 2px #DD4814 solid; margin-top: 100px; font-family: arial; font-size: 12px;">
-            <span style="float: left;">&copy;<a href="#">Websurfer Nepal Pvt. Ltd. </a> 2013</span>
-            <span style="float: right;">Powered by: <a href="#">Websurfer</a></span>
+            defg
         </div>
       
 		
